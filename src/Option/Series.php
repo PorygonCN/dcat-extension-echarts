@@ -1,9 +1,9 @@
 <?php
 
-namespace Porygon\Ecahrts\Option;
+namespace Porygon\Echarts\Option;
 
 use Illuminate\Contracts\Support\Arrayable;
-use Porygon\Ecahrts\Option\Series\Serie;
+use Porygon\Echarts\Option\Series\Serie;
 
 class Series implements Arrayable
 {

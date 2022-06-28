@@ -1,10 +1,10 @@
 <?php
 
-namespace Porygon\Ecahrts\Chart\Line;
+namespace Porygon\Echarts\Chart\Line;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use Porygon\Ecahrts\Chart\Line;
+use Porygon\Echarts\Chart\Line;
 
 class NewUser extends Line
 {

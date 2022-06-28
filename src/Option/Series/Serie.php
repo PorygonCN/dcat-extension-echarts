@@ -1,6 +1,6 @@
 <?php
 
-namespace Porygon\Ecahrts\Option\Series;
+namespace Porygon\Echarts\Option\Series;
 
 use Illuminate\Contracts\Support\Arrayable;
 

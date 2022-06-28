@@ -21,10 +21,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Porygon\\Ecahrts\\": "src/"
+            "Porygon\\Echarts\\": "src/"
         }
     },
     "extra": {
-        "dcat-admin": "Porygon\\Ecahrts\\EchartsServiceProvider"
+        "dcat-admin": "Porygon\\Echarts\\EchartsServiceProvider"
     }
 }

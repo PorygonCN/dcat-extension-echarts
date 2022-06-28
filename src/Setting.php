@@ -1,6 +1,6 @@
 <?php
 
-namespace Porygon\Ecahrts;
+namespace Porygon\Echarts;
 
 use Dcat\Admin\Extend\Setting as Form;
 

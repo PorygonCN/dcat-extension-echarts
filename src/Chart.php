@@ -1,6 +1,6 @@
 <?php
 
-namespace Porygon\Ecahrts;
+namespace Porygon\Echarts;
 
 use Dcat\Admin\Support\Helper;
 use Dcat\Admin\Support\JavaScript;

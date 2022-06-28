@@ -1,7 +1,8 @@
 # Dcat Admin Extension Echarts 图表扩展
 
 ## 安装
-- 下载安装  直接将仓库下载或者克隆到项目的 dcat 扩展文件夹中 然后去扩展页面中启用
+
+- 下载安装 直接将仓库下载或者克隆到项目的 dcat 扩展文件夹中 然后去扩展页面中启用
 - composer 安装 `composer require porygon/echarts` 然后去扩展页面中启用
 - Dcat 扩展市场安装(暂未开放)
 
@@ -42,7 +43,7 @@ Chart::make()->grid([
 
 // 封装调用
 // 这个是与封装的demo
-use Porygon\Ecahrts\Chart\Line\NewUser;
+use Porygon\Echarts\Chart\Line\NewUser;
 
 // 封装创建的是一个卡片
 NewUser::make();
@@ -58,12 +59,11 @@ NewUser::make()->->xAxis([
     "trigger" => 'axis',
 ]);
 ```
+
 - 原生调用效果
 
 ![image](https://user-images.githubusercontent.com/31176914/176086461-e08e9480-5fd0-422c-a16a-f206b7a9043c.png)
 
-
 - 卡片效果
 
 ![image](https://user-images.githubusercontent.com/31176914/176086367-80e18d7d-b1d9-4305-a564-502cd4e4f4f0.png)
-

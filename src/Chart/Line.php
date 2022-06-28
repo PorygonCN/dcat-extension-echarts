@@ -1,6 +1,6 @@
 <?php
 
-namespace Porygon\Ecahrts\Chart;
+namespace Porygon\Echarts\Chart;
 
 use Illuminate\Http\Request;
 
@@ -19,7 +19,7 @@ class Line extends Card
 
     public function smooth($smooth, $index = null)
     {
-        
+
         return $this;
     }
 }

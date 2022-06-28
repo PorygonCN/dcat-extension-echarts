@@ -1,10 +1,10 @@
 <?php
 
-namespace Porygon\Ecahrts\Chart;
+namespace Porygon\Echarts\Chart;
 
 use Dcat\Admin\Widgets\Metrics\Card as MetricsCard;
-use Porygon\Ecahrts\Chart;
-use Porygon\Ecahrts\Option;
+use Porygon\Echarts\Chart;
+use Porygon\Echarts\Option;
 
 class Card extends MetricsCard
 {

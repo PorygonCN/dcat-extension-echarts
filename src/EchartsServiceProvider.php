@@ -1,11 +1,11 @@
 <?php
 
-namespace Porygon\Ecahrts;
+namespace Porygon\Echarts;
 
 use Dcat\Admin\Extend\ServiceProvider;
 use Dcat\Admin\Admin;
 
-class EcahrtsServiceProvider extends ServiceProvider
+class EchartsServiceProvider extends ServiceProvider
 {
     protected $js = [
         'js/*',
@@ -21,7 +21,7 @@ class EcahrtsServiceProvider extends ServiceProvider
     {
         parent::init();
 
-        Admin::asset()->alias('@echarts', '/vendor/dcat-admin-extensions/porygon/ecahrts/js');
+        Admin::asset()->alias('@echarts', '/vendor/dcat-admin-extensions/porygon/echarts/js');
     }
 
     public function settingForm()

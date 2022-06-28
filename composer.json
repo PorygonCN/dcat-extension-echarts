@@ -1,18 +1,18 @@
 {
-    "name": "porygon/ecahrts",
-    "alias": "",
-    "description": "Description...",
+    "name": "porygon/dcat-extension-ecahrts",
+    "alias": "porygon-echarts",
+    "description": "Dcat Echarts扩展",
     "type": "library",
     "keywords": [
         "dcat-admin",
         "extension"
     ],
-    "homepage": "https://github.com/porygonCN/ecahrts",
+    "homepage": "https://github.com/porygonCN/dcat-extension-ecahrts",
     "license": "MIT",
     "authors": [
         {
-            "name": "your name",
-            "email": "your email"
+            "name": "cyw",
+            "email": "1764887758@qq.com"
         }
     ],
     "require": {

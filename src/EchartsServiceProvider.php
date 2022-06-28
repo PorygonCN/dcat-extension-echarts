@@ -21,7 +21,7 @@ class EchartsServiceProvider extends ServiceProvider
     {
         parent::init();
 
-        Admin::asset()->alias('@echarts', '/vendor/dcat-admin-extensions/porygon/echarts/js');
+        Admin::asset()->alias('@echarts', '/vendor/dcat-admin-extensions/porygon/dcat-extension-echarts/js');
     }
 
     public function settingForm()

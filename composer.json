@@ -1,5 +1,5 @@
 {
-    "name": "porygon/dcat-extension-ecahrts",
+    "name": "porygon/dcat-extension-echarts",
     "alias": "porygon-echarts",
     "description": "Dcat Echarts扩展",
     "type": "library",
@@ -7,7 +7,7 @@
         "dcat-admin",
         "extension"
     ],
-    "homepage": "https://github.com/porygonCN/dcat-extension-ecahrts",
+    "homepage": "https://github.com/porygonCN/dcat-extension-echarts",
     "license": "MIT",
     "authors": [
         {
@@ -25,6 +25,6 @@
         }
     },
     "extra": {
-        "dcat-admin": "Porygon\\Ecahrts\\EcahrtsServiceProvider"
+        "dcat-admin": "Porygon\\Ecahrts\\EchartsServiceProvider"
     }
 }

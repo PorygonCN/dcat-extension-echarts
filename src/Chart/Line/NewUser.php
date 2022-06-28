@@ -25,11 +25,6 @@ class NewUser extends Line
             "right"        => "0%",
             "top"          => "0%",
             "bottom"       => "0%",
-        ])->xAxis([
-            "type" => 'category',
-            "boundaryGap" => false,
-            // "data" => ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            "show" => false,
         ])->yAxis(["type" => "value", "show" => false]);
 
         $this->dropdown([

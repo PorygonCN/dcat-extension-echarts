@@ -25,6 +25,11 @@
         }
     },
     "extra": {
-        "dcat-admin": "Porygon\\Echarts\\EchartsServiceProvider"
+        "dcat-admin": "Porygon\\Echarts\\EchartsServiceProvider",
+        "laravel": {
+            "providers": [
+                "Porygon\\Echarts\\EchartsServiceProvider"
+            ]
+        }
     }
 }

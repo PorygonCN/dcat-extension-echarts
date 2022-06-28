@@ -25,12 +25,16 @@ class NewUser extends Line
             "right"        => "0%",
             "top"          => "0%",
             "bottom"       => "0%",
+        ])->xAxis([
+            "type"        => 'category',
+            "boundaryGap" => false,
+            "show"        => false,
         ])->yAxis(["type" => "value", "show" => false]);
 
         $this->dropdown([
-            '7' => 'Last 7 Days',
-            '28' => 'Last 28 Days',
-            '30' => 'Last Month',
+            '7'   => 'Last 7 Days',
+            '28'  => 'Last 28 Days',
+            '30'  => 'Last Month',
             '365' => 'Last Year',
         ]);
         $this->tooltip([

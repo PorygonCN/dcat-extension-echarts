@@ -74,7 +74,7 @@ class Chart extends Widget
     protected $chartHeight = self::DEFAULT_CONTAINER_HEIGHT;
 
     public static $js = [
-        '@echarts/echarts.js',
+        '@echarts/echarts.min.js',
     ];
 
     protected $containerSelector;

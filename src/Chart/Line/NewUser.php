@@ -15,9 +15,8 @@ class NewUser extends Line
     {
         parent::init();
 
-
         $this->title('New Users');
-        $this->chartHeight(60);
+        $this->chartHeight(160);
 
         $this->grid([
             "containLabel" => false,
@@ -25,10 +24,6 @@ class NewUser extends Line
             "right"        => "0%",
             "top"          => "0%",
             "bottom"       => "0%",
-        ])->xAxis([
-            "type"        => 'category',
-            "boundaryGap" => false,
-            "show"        => false,
         ])->yAxis(["type" => "value", "show" => false]);
 
         $this->dropdown([

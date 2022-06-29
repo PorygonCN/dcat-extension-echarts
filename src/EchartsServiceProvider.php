@@ -7,6 +7,9 @@ use Dcat\Admin\Admin;
 
 class EchartsServiceProvider extends ServiceProvider
 {
+    const ECHARTS_VERSION = "5.3.3";
+    const VERSION = "0.1.1";
+
     protected $js = [
         'js/*',
     ];

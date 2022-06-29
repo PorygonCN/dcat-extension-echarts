@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 /**
  * Class Chart.
  *
- * @see [Echarts文档](https://echarts.apache.org/zh/option.html)
+ * @see [Echarts 配置项文档](https://echarts.apache.org/zh/option.html)
  *
  * @method Chart title(string|array $title)         设置标题
  * @method Chart series(array $series)              设置数据展示/展示方式

@@ -9,9 +9,25 @@ use Porygon\Echarts\Option;
 class Card extends MetricsCard
 {
     /**
+     * 是否启用loading
+     */
+    protected $load = true;
+    /**
      * @var Chart
      */
     protected $chart;
+
+    /**
+     * 设置是否启用loading
+     */
+    public function load($load = null)
+    {
+        if ($load === null) {
+            return $this->load;
+        }
+        $this->load = $load;
+        return $this;
+    }
 
     /**
      * 启用图表.
@@ -49,7 +65,9 @@ class Card extends MetricsCard
         if (!$chart = $this->chart) {
             return;
         }
-
+        /**
+         * 设置边距
+         */
         $this->setUpChartMargin();
 
         // 图表配置选项
@@ -108,6 +126,61 @@ class Card extends MetricsCard
 </div>
 HTML
         );
+    }
+
+    /**
+     * @return mixed
+     */
+    public function addScript()
+    {
+        if (!$this->allowBuildRequest()) {
+            return;
+        }
+
+        $id = $this->id();
+
+
+        $this->fetching(<<<JS
+var \$card = $('#{$id}');
+JS);
+        if ($this->load) {
+            // 开启loading效果
+            $this->fetching(<<<JS
+\$card.loading();
+JS);
+            $this->fetched(<<<'JS'
+$card.loading(false);
+JS);
+        }
+
+        $this->fetched(
+            <<<'JS'
+$card.loading(false);
+$card.find('.metric-header').html(response.header);
+$card.find('.metric-content').html(response.content);
+JS
+        );
+
+        $clickable = "#{$id} .dropdown .select-option";
+
+        $cardRequestScript = '';
+
+        if ($this->chart) {
+            // 有图表的情况下，直接使用图表的js代码.
+            $this->chart->merge($this)->click($clickable);
+        } else {
+            // 没有图表，需要构建卡片数据请求js代码.
+            $cardRequestScript = $this->click($clickable)->buildRequestScript();
+        }
+
+        // 按钮显示选中文本
+        return $this->script = <<<JS
+$('{$clickable}').on('click', function () {
+    $(this).parents('.dropdown').find('.btn').html($(this).text());
+});
+
+{$cardRequestScript}
+JS;
     }
 
     /**

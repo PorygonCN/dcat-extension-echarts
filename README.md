@@ -43,7 +43,7 @@ Chart::make()->grid([
 
 // 封装调用
 // 这个是与封装的demo
-use Porygon\Echarts\Chart\Line\NewUser;
+use Porygon\Echarts\Examples\NewUser;
 
 // 封装创建的是一个卡片
 NewUser::make();

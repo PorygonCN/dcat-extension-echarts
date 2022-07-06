@@ -3,7 +3,7 @@
 ## 安装
 
 - 下载安装 直接将仓库下载或者克隆到项目的 dcat 扩展文件夹中 然后去扩展页面中启用
-- composer 安装 `composer require porygon/echarts` 然后去扩展页面中启用
+- composer 安装 `composer require porygon/dcat-extension-echarts` 然后去扩展页面中启用
 - Dcat 扩展市场安装(暂未开放)
 
 ## 用法

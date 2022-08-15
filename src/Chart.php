@@ -113,6 +113,19 @@ class Chart extends Widget
 
         $this->options($options);
     }
+
+    /**
+     * 设置parameters
+     */
+    public function setParameters($key, $value = null)
+    {
+        if (is_array($key)) {
+            $this->parameters = array_merge($this->parameters(), $key);
+        } elseif (is_string($key)) {
+            $this->parameters[$key] = $value;
+        }
+    }
+
     /**
      * 初始化默认Options
      */
